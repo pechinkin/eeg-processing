@@ -6,22 +6,24 @@ There are given files with labels, time of trial starts (duration - 5 sec), EEG 
 
 #### Steps I did
 1. Preprocessing (I used only 3 electrodes, which are associated with imaginary movements - Cz, C3, C4), which includes 
-1.1 Baseline correction
-1.2 Filtering (0.5 ... 30 Hz)
-1.3 PCA
-1.4 CAR
-1.5 Epoching
+- Baseline correction
+- Filtering (0.5 ... 30 Hz)
+- PCA
+- CAR
+- Epoching
 
 2. Extracting features
-**Time domain**
-2.1.1 RMS
-2.1.2 Mean amplitude
-2.1.1 Variance
-2.1.3 Kurtosis
-**Frequency domain**
-2.2.1 Power
-2.2.2 Peak frequency
-2.2.3 Spectral centroid
+   
+`Time domain`
+- RMS
+- Mean amplitude
+- Variance
+- Kurtosis
+
+`Frequency domain`
+- Power
+- Peak frequency
+- Spectral centroid
 
 3. Classification
 I used 70% of data for training and remaining part for testing. For classification i used Support Vector Machine (SVM).
