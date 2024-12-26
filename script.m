@@ -107,6 +107,8 @@ end
 
 %% Prepare Data for Classification
 
+rng(30);
+
 dataFeatures = normalize(dataFeatures);
 trainRatio = 0.7;
 numSamples = length(label);
